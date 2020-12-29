@@ -1,7 +1,7 @@
 # wx-poster
 # 微信海报生成组件
 # npm 安装
-# npm i @xuetong/wx-poster -S
+# npm i ming-wx-poster -S
 <poster viewData="{{viewData}}" xtid="{{xtid}}" bind:wxLogin="wxGetLogin" bind:getHeight="getHeight" shareUrl="{{testQRCodeSrc}}"></poster>
 <view class="canvas-wrapper">    
     <canvas class="canvas-background" canvas-id="canvasBackground" style="height: {{canvasHeight}}rpx"></canvas>    
