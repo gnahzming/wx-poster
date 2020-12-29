@@ -1,0 +1,81 @@
+.generate-poster {
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  z-index: 1;
+  width: 30px;
+  background: rgba(69, 173, 0, 0.8);
+  font-size: 12px;
+  padding: 5px 10px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.generate-poster button[type=primary] {
+  background-color: transparent;
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+.dialog-box {
+  position: relative;
+}
+
+.dialog-box .van-popup {
+  width: 70%;
+  background: transparent;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.dialog-box image {
+  width: 100%;
+  border-radius: 5px;
+  overflow-y: hidden;
+}
+
+.dialog-colse {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10rpx;
+  right: -20rpx;
+  z-index: 100
+}
+
+.save-button .van-button {
+  font-size: 16px;
+}
+.poster-box{
+  max-height: 1000rpx;
+  overflow-y: scroll;
+}
+.un-roll{
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+.dialog-box .van-dialog__footer{
+  display: none;
+}
+.poster-text{
+  color: #fff;
+  width: 60rpx;
+  font-size: 28rpx;
+}
+.loading-box{
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #fff;
+}
+.loading-box van-loading{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}

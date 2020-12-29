@@ -1,0 +1,27 @@
+
+<button class="generate-poster" wx:if="{{token}}">生成海报1</button>
+<component-login bind:wxLogin="generatePoster"  xtid="{{xtid}}" class="generate-poster" wx:else>
+	<view slot="login" class="poster-text">生成海报</view>
+</component-login>
+
+<van-dialog
+		use-slot
+		class="dialog-box"
+		showConfirmButton="{{false}}"
+		show="{{ posterShow }}"
+		bind:close="dialogColse"
+		closeOnClickOverlay
+	>
+	  <view class="dialog-colse" bindtap="dialogColse"><van-icon name="clear" color="white" size="20px"/></view>
+		<!-- <image src="{{details_url}}" mode="widthFix"/> -->
+		<view class="loading-box" wx:if="{{loading}}"><van-loading size="24px" vertical>加载中...</van-loading></view>
+		<view class="poster-box">
+			<image 
+					mode="widthFix"
+					show-menu-by-longpress
+					class="img-background" 
+					src="{{ imgSrc }}"
+			/>
+		</view>
+		<van-button type="primary" block bindtap="savePhoto" class="save-button" >保存图片</van-button>
+	</van-dialog>
